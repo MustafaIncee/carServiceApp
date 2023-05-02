@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">arabaServisiUygulama</string>
+    <string name="data">Result Text</string>
+    <string name="fetch_data">Fetch Data</string>
+    <string name="put_data">Put Data</string>
+    <string name="username">İsim</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş Yap</string>
+    <string name="signuphere">Hesabınız yok mu? Kaydolun.</string>
+    <string name="signup">Üye Ol</string>
+    <string name="loginhere">Zaten bir hesabın var mı? Giriş yap.</string>
+    <string name="kullaniciAd">Ad</string>
+    <string name="kullaniciSoyad">Soyad</string>
+    <string name="Email">Email</string>
+    <string name="signup1">Hesabınız yok mu? Kaydolun</string>
+</resources>
