@@ -19,6 +19,12 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string-array name="yakit_turleri">
+        <item>Benzin</item>
+        <item>Dizel</item>
+        <item>Elektrik</item>
+        <item>Hybrid</item>
+    </string-array>
 
     <string name="title_activity_randevu">Randevu</string>
 </resources>

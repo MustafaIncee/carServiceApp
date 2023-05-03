@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -18,9 +19,11 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Randevu extends AppCompatActivity {
 
-    EditText textInputEditTextMarka, textInputEditTextModel, textInputEditTextSeri, textInputEditTextPlaka;
+    EditText textInputEditTextMarka, textInputEditTextModel, textInputEditTextSeri, textInputEditTextPlaka, TextInputEditTextKilometre;
 
     Button buttonRandevuOlustur;
+
+    Spinner spinnerYakit;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -34,19 +37,24 @@ public class Randevu extends AppCompatActivity {
         textInputEditTextModel = findViewById(R.id.model);
         textInputEditTextSeri = findViewById(R.id.seri);
         textInputEditTextPlaka = findViewById(R.id.plaka);
+        TextInputEditTextKilometre = findViewById(R.id.kilometre);
+
+        spinnerYakit = findViewById(R.id.yakit);
 
 
         buttonRandevuOlustur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String marka, model, seri, plaka;
+                String marka, model, seri, plaka, kilometre, yakit;
                 marka = String.valueOf(textInputEditTextMarka.getText());
                 model = String.valueOf(textInputEditTextModel.getText());
                 seri = String.valueOf(textInputEditTextSeri.getText());
                 plaka = String.valueOf(textInputEditTextPlaka.getText());
+                kilometre = String.valueOf(TextInputEditTextKilometre.getText());
+                yakit = spinnerYakit.getSelectedItem().toString();
 
 
-                if (!marka.equals("") && !model.equals("") && !seri.equals("") && !plaka.equals("")){
+                if (!marka.equals("") && !model.equals("") && !seri.equals("") && !plaka.equals("") && !kilometre.equals("") && !yakit.equals("")){
                     //progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler(Looper.getMainLooper());
                     handler.post(new Runnable() {
@@ -55,18 +63,23 @@ public class Randevu extends AppCompatActivity {
 
                             //Starting Write and Read data with URL
                             //Creating array for parameters
-                            String[] field = new String[4];
+                            String[] field = new String[6];
                             field[0] = "marka";
                             field[1] = "model";
                             field[2] = "seri";
                             field[3] = "plaka";
+                            field[4] = "kilometre";
+                            field[5] = "yakit";
+
 
                             //Creating array for data
-                            String[] data = new String[4];
+                            String[] data = new String[6];
                             data[0] = marka;
                             data[1] = model;
                             data[2] = seri;
                             data[3] = plaka;
+                            data[4] = kilometre;
+                            data[5] = yakit;
 
                             PutData putData = new PutData("http://192.168.0.29/LoginRegister/CarInformation.php", "POST", field, data);
                             if (putData.startPut()) {
