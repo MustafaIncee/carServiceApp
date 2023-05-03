@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Araba Bilgileri"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Marka" />
+
+        <EditText
+            android:id="@+id/marka"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:hint="Marka giriniz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Model" />
+
+        <EditText
+            android:id="@+id/model"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:hint="Model giriniz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Seri" />
+
+        <EditText
+            android:id="@+id/seri"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:hint="Seri giriniz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Plaka" />
+
+        <EditText
+            android:id="@+id/plaka"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:hint="Plaka giriniz" />
+
+        <Button
+            android:id="@+id/randevuOlustur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Devam" />
+
+    </LinearLayout>
+</ScrollView>
