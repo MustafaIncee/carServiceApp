@@ -27,10 +27,11 @@
             android:layout_marginTop="16dp"
             android:text="Marka" />
 
-        <EditText
+        <Spinner
             android:id="@+id/marka"
             android:layout_width="350dp"
             android:layout_height="48dp"
+            android:entries="@array/markalar"
             android:inputType="text"
             android:hint="Marka giriniz" />
 
@@ -40,25 +41,27 @@
             android:layout_marginTop="16dp"
             android:text="Model" />
 
-        <EditText
+        <Spinner
             android:id="@+id/model"
             android:layout_width="350dp"
             android:layout_height="48dp"
-            android:inputType="text"
-            android:hint="Model giriniz" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Seri" />
-
-        <EditText
-            android:id="@+id/seri"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
+            android:entries="@array/modeller"
             android:inputType="text"
             android:hint="Seri giriniz" />
+
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Yıl" />
+
+        <Spinner
+            android:id="@+id/yil"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:entries="@array/yillar"
+            android:inputType="text"
+            android:hint="Yıl giriniz" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -90,25 +93,26 @@
             android:id="@+id/yakit_turu_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="Yakıt Türü"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
+
 
         <Spinner
             android:id="@+id/yakit"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:entries="@array/yakit_turleri"
-            app:layout_constraintTop_toBottomOf="@id/yakit_turu_label"
-            app:layout_constraintStart_toStartOf="parent"/>
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/yakit_turu_label" />
 
         <Button
             android:id="@+id/randevuOlustur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
             android:text="Devam" />
 
     </LinearLayout>
