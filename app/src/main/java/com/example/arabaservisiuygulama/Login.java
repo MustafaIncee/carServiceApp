@@ -48,6 +48,8 @@ public class Login extends AppCompatActivity {
                 email = String.valueOf(textInputEditTextEmail.getText());
                 sifre = String.valueOf(textInputEditTextSifre.getText());
 
+
+
                 if (!email.equals("") && !sifre.equals("")){
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler(Looper.getMainLooper());
@@ -72,8 +74,16 @@ public class Login extends AppCompatActivity {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
                                     String result = putData.getResult();
-                                    if (result.equals("Giris Basarili!"))
+
+                                    if (result.equals("Giris Basarili!") && (email.equals("admin") && sifre.equals("admin")))
                                     {
+                                        Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(getApplicationContext(), Admin.class);
+                                        startActivity(intent);
+                                        finish();
+
+                                    }
+                                    else if(result.equals("Giris Basarili!")){
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                         startActivity(intent);
