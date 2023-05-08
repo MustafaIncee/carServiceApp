@@ -76,6 +76,9 @@
         <item>2023</item>
 
     </string-array>
+    <string name="adres1">Esentepe Mah. İnönü Cad. Kartal Oto Sanayi Sitesi D:b8 Blok Kartal/İstanbul</string>
+    <string name="adres2">Tatlıkuyu Mah. Akçasaray Cad. No:115/B Gebze/Kocaeli</string>
+    <string name="adres3">Pişmaniye Mah. Şeker Sok. No:41 İzmit/Kocaeli</string>
 
     <string name="title_activity_randevu">Randevu</string>
 </resources>
