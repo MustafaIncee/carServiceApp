@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".Admin">
 
+    <Button
+        android:id="@+id/listeleButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="333dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="137dp"
+        android:text="Listele"
+        app:layout_constraintBottom_toTopOf="@+id/silButton"
+        app:layout_constraintEnd_toStartOf="@+id/silButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId" />
+
+    <Button
+        android:id="@+id/silButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="326dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="247dp"
+        android:text="Sil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listeleButton"
+        tools:ignore="InvalidId" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

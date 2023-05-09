@@ -66,9 +66,7 @@ public class Randevu extends AppCompatActivity {
                 kilometre = String.valueOf(TextInputEditTextKilometre.getText());
                 yakit = spinnerYakit.getSelectedItem().toString();
 
-                Intent intent = new Intent(getApplicationContext(), RandevuDevam.class);
-                startActivity(intent);
-                finish();
+
 
                 if (!marka.equals("") && !model.equals("") && !yil.equals("") && !plaka.equals("") && !kilometre.equals("") && !yakit.equals("")){
                     //progressBar.setVisibility(View.VISIBLE);
@@ -105,6 +103,9 @@ public class Randevu extends AppCompatActivity {
                                     if (result.equals("Arac Kaydi Basarili!"))
                                     {
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        startActivity(intent);
+                                        finish();
 
                                     }
                                     else {
