@@ -45,9 +45,8 @@
             android:id="@+id/model"
             android:layout_width="350dp"
             android:layout_height="48dp"
-            android:entries="@array/modeller"
             android:inputType="text"
-            android:hint="Seri giriniz" />
+            android:hint="Model giriniz" />
 
         <TextView
             android:layout_width="18dp"

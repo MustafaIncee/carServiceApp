@@ -80,14 +80,14 @@ public class Login extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), Admin.class);
                                         startActivity(intent);
-                                        finish();
+
 
                                     }
                                     else if(result.equals("Giris Basarili!")){
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                         startActivity(intent);
-                                        finish();
+
                                     }
                                     else {
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
