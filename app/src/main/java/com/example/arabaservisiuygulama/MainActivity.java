@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button ButtonCarInformation, ButtonIletisim;
+    Button ButtonCarInformation, ButtonIletisim,ButtonHizmetler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,13 +17,14 @@ public class MainActivity extends AppCompatActivity {
 
         ButtonIletisim = findViewById(R.id.button4);
         ButtonCarInformation = findViewById(R.id.button1);
+        ButtonHizmetler = findViewById(R.id.button2);
 
         ButtonIletisim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, IletisimBilgilerimiz.class);
                 startActivity(intent);
-                finish();
+
             }
         });
         ButtonCarInformation.setOnClickListener(new View.OnClickListener() {
@@ -31,10 +32,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Randevu.class);
                 startActivity(intent);
-                finish();
+
+            }
+        });
+        ButtonHizmetler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Hizmetler.class);
+                startActivity(intent);
+
             }
         });
     }
 
 }
-

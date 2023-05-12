@@ -25,7 +25,7 @@ public class Admin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Admin.this, AracListele.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -34,7 +34,7 @@ public class Admin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Admin.this, AracSil.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 

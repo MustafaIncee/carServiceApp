@@ -19,6 +19,12 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+    <string name="BoyamaKaporta">
+Boya ve kaporta işleri, aracınızın dış görünüşünü yeniler ve hasarları giderir. Bu hizmet, aracınızın estetiğini ve değerini arttırır, aynı zamanda güvenliğini de sağlar. Araba servisleri, profesyonel ekipman ve tecrübeli personel ile bu işlemleri doğru bir şekilde gerçekleştirir. Aracınızın yeniden parlaklığına kavuşması için boya ve kaporta işlerini yaptırabilirsiniz.</string>
+    <string name="PeriyodikBakim">Aracınızın periyodik bakımlarını düzenli olarak yaptırmak, aracınızın performansını ve güvenliğini sağlar. Yağ değişimi, frenlerin kontrolü, filtre değişimi, rot balans ayarı, akü kontrolü ve araç içi klima kontrolü bu hizmetler arasındadır. Bakımlar aracınızın ömrünü uzatır ve sürüş deneyiminizi keyifli hale getirir.</string>
+    <string name="talepButon">Talep oluştur</string>
+
     <string-array name="yakit_turleri">
         <item>Benzin</item>
         <item>Dizel</item>
@@ -45,12 +51,6 @@
         <item>Volvo</item>
     </string-array>
 
-    <string-array name="modeller">
-        <item>Benzin</item>
-        <item>Dizel</item>
-        <item>Elektrik</item>
-        <item>Hybrid</item>
-    </string-array>
 
     <string-array name="yillar">
         <item>2003</item>
@@ -75,10 +75,25 @@
         <item>2022</item>
         <item>2023</item>
 
+
     </string-array>
+
+    <string-array name="periyodik_bakim">
+        <item>Periyodik Bakım</item>
+    </string-array>
+    <string-array name="onarim_hizmeti">
+        <item>Onarım Hizmetleri</item>
+    </string-array>
+
+    <string-array name="boyama_kaporta">
+        <item>Boyama ve Kaporta</item>
+    </string-array>
+
+
     <string name="adres1">Esentepe Mah. İnönü Cad. Kartal Oto Sanayi Sitesi D:b8 Blok Kartal/İstanbul</string>
     <string name="adres2">Tatlıkuyu Mah. Akçasaray Cad. No:115/B Gebze/Kocaeli</string>
     <string name="adres3">Pişmaniye Mah. Şeker Sok. No:41 İzmit/Kocaeli</string>
 
     <string name="title_activity_randevu">Randevu</string>
+    <string name="OnarimHizmetleri">Araba servisleri, araçların ihtiyaç duyduğu tamir işlemlerini gerçekleştirir. Bu hizmetler arasında motor, şanzıman, fren, süspansiyon ve elektronik sistemlerin onarımı yer alır. Profesyonel araba servisleri, araçlarınızı güvenle teslim edebileceğiniz, deneyimli ve uzman ekibiyle araçlarınızı en iyi şekilde onarır. Böylece, aracınızın ömrünü uzatır ve güvenliğinizi sağlar.</string>
 </resources>
