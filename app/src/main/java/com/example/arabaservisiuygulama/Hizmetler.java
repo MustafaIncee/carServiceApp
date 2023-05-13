@@ -33,7 +33,7 @@ public class Hizmetler extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Hizmetler.this, OnarimHizmetleri.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -42,9 +42,11 @@ public class Hizmetler extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Hizmetler.this, BoyamaKaporta.class);
                 startActivity(intent);
-                finish();
+
             }
         });
+
+
     }
 
 

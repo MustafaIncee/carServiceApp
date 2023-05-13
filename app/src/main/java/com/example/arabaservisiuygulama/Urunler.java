@@ -16,21 +16,28 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class IletisimBilgilerimiz extends AppCompatActivity {
+public class Urunler extends AppCompatActivity {
 
-    private TextView adres1TextView, adres2TextView,adres3TextView,telefon1TV,telefon2TV,telefon3TV;
+    private TextView urun1TextView, urun2TextView, urun3TextView, urun4TextView, urun5TextView, fiyat1Textview,
+            fiyat2Textview, fiyat3Textview, fiyat4Textview, fiyat5Textview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iletisim_bilgilerimiz);
+        setContentView(R.layout.activity_urunler);
 
-        adres1TextView = findViewById(R.id.adres1);
-        adres2TextView = findViewById(R.id.adres2);
-        adres3TextView = findViewById(R.id.adres3);
-        telefon1TV = findViewById(R.id.telefon1);
-        telefon2TV = findViewById(R.id.telefon2);
-        telefon3TV = findViewById(R.id.telefon3);
+        urun1TextView = findViewById(R.id.urun1);
+        urun2TextView = findViewById(R.id.urun2);
+        urun3TextView = findViewById(R.id.urun3);
+        urun4TextView = findViewById(R.id.urun4);
+        urun5TextView = findViewById(R.id.urun5);
+
+        fiyat1Textview = findViewById(R.id.fiyat1);
+        fiyat2Textview = findViewById(R.id.fiyat2);
+        fiyat3Textview = findViewById(R.id.fiyat3);
+        fiyat4Textview = findViewById(R.id.fiyat4);
+        fiyat5Textview = findViewById(R.id.fiyat5);
+
 
         // Verileri almak için AsyncTask'i başlat
         new FetchDataTask().execute();
@@ -46,7 +53,7 @@ public class IletisimBilgilerimiz extends AppCompatActivity {
 
             try {
                 // Verileri almak istediğiniz PHP dosyasının URL'sini belirtin
-                URL url = new URL("http://192.168.0.29/LoginRegister/Adres.php");
+                URL url = new URL("http://192.168.0.29/LoginRegister/Urun.php");
 
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
@@ -97,23 +104,35 @@ public class IletisimBilgilerimiz extends AppCompatActivity {
 
                 // İlk iki adresi TextView'lere yazdır
                 JSONObject jsonObject1 = jsonArray.getJSONObject(0);
-                adres1TextView.setText(jsonObject1.getString("adres"));
+                urun1TextView.setText(jsonObject1.getString("urun_ad"));
 
                 JSONObject jsonObject2 = jsonArray.getJSONObject(1);
-                adres2TextView.setText(jsonObject2.getString("adres"));
+                urun2TextView.setText(jsonObject2.getString("urun_ad"));
 
                 JSONObject jsonObject3 = jsonArray.getJSONObject(2);
-                adres3TextView.setText(jsonObject3.getString("adres"));
+                urun3TextView.setText(jsonObject3.getString("urun_ad"));
+
+                JSONObject jsonObject4 = jsonArray.getJSONObject(3);
+                urun4TextView.setText(jsonObject4.getString("urun_ad"));
+
+                JSONObject jsonObject5 = jsonArray.getJSONObject(4);
+                urun5TextView.setText(jsonObject5.getString("urun_ad"));
 
 
-                JSONObject jsonObject4 = jsonArray.getJSONObject(0);
-                telefon1TV.setText(jsonObject4.getString("telefon"));
+                JSONObject jsonObject6 = jsonArray.getJSONObject(0);
+                fiyat1Textview.setText(jsonObject5.getString("fiyat"));
 
-                JSONObject jsonObject5 = jsonArray.getJSONObject(1);
-                telefon2TV.setText(jsonObject5.getString("telefon"));
+                JSONObject jsonObject7 = jsonArray.getJSONObject(1);
+                fiyat2Textview.setText(jsonObject6.getString("fiyat"));
 
-                JSONObject jsonObject6 = jsonArray.getJSONObject(2);
-                telefon3TV.setText(jsonObject6.getString("telefon"));
+                JSONObject jsonObject8 = jsonArray.getJSONObject(2);
+                fiyat3Textview.setText(jsonObject7.getString("fiyat"));
+
+                JSONObject jsonObject9 = jsonArray.getJSONObject(3);
+                fiyat4Textview.setText(jsonObject8.getString("fiyat"));
+
+                JSONObject jsonObject10 = jsonArray.getJSONObject(4);
+                fiyat5Textview.setText(jsonObject9.getString("fiyat"));
 
             } catch (JSONException e) {
                 e.printStackTrace();

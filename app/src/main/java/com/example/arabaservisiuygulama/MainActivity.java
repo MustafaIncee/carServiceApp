@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button ButtonCarInformation, ButtonIletisim,ButtonHizmetler;
+    Button ButtonCarInformation, ButtonIletisim, ButtonHizmetler, ButtonUrunler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         ButtonIletisim = findViewById(R.id.button4);
         ButtonCarInformation = findViewById(R.id.button1);
         ButtonHizmetler = findViewById(R.id.button2);
+        ButtonUrunler = findViewById(R.id.button3);
+
+
 
         ButtonIletisim.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         ButtonCarInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         ButtonHizmetler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        ButtonUrunler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Urunler.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
