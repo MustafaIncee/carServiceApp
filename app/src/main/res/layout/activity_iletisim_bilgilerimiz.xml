@@ -7,6 +7,30 @@
     android:background="@drawable/iletisim"
     tools:context=".IletisimBilgilerimiz">
 
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/telefon" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825"
+        app:srcCompat="@drawable/telefon" />
+
     <TextView
         android:id="@+id/editTextTextPostalAddress6"
         android:layout_width="131dp"
@@ -41,20 +65,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65" />
 
+
     <TextView
-        android:id="@+id/editTextTextPostalAddress3"
+        android:id="@+id/adres3"
         android:layout_width="333dp"
         android:layout_height="58dp"
         android:autoSizeTextType="uniform"
-        android:text="@string/adres3"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
+        app:layout_constraintVertical_bias="0.921" />
+
+    <TextView
+        android:id="@+id/telefon3"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:autoSizeTextType="uniform"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
 
     <TextView
         android:id="@+id/editTextTextPostalAddress4"
@@ -74,19 +112,33 @@
         app:layout_constraintVertical_bias="0.449" />
 
     <TextView
-        android:id="@+id/editTextTextPostalAddress"
-        android:layout_width="349dp"
-        android:layout_height="86dp"
+        android:id="@+id/adres1"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
         android:autoSizeTextType="uniform"
-        android:text="@string/adres1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548" />
+        app:layout_constraintVertical_bias="0.532" />
+
+    <TextView
+        android:id="@+id/telefon1"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:textSize="6sp"
+
+        android:autoSizeTextType="uniform"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -112,20 +164,34 @@
         app:layout_constraintVertical_bias="0.65"
         app:srcCompat="@drawable/konum" />
 
+
     <TextView
-        android:id="@+id/editTextTextPostalAddress2"
-        android:layout_width="334dp"
-        android:layout_height="62dp"
+        android:id="@+id/adres2"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
         android:autoSizeTextType="uniform"
-        android:text="@string/adres2"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="8sp"
+        android:textSize="6sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.731" />
+
+    <TextView
+        android:id="@+id/telefon2"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:textSize="6sp"
+        android:autoSizeTextType="uniform"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -167,6 +233,18 @@
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655"
+        app:srcCompat="@drawable/telefon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

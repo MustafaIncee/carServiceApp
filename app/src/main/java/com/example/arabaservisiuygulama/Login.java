@@ -19,7 +19,7 @@ public class Login extends AppCompatActivity {
 
     TextInputEditText textInputEditTextEmail, textInputEditTextSifre;
     Button buttonLogin;
-    TextView textViewSignUp;
+    TextView textViewSignUp,buttonF;
     ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class Login extends AppCompatActivity {
         buttonLogin = findViewById(R.id.LoginButon);
         textViewSignUp = findViewById(R.id.KayitOlText);
         progressBar = findViewById(R.id.progress);
+        buttonF=findViewById(R.id.button5);
 
         textViewSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,7 +105,13 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
+        buttonF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, ForgotPassword.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
