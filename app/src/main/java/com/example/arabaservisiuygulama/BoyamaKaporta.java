@@ -52,8 +52,7 @@ import java.util.Map;
                         @Override
                         public void run() {
 
-                            //Starting Write and Read data with URL
-                            //Creating array for parameters
+                            
                             String[] field = new String[1];
                             field[0] = "hizmetTuru";
 
@@ -66,7 +65,7 @@ import java.util.Map;
                             PutData putData = new PutData("http://192.168.0.29/LoginRegister/hizmetler.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
-                                    //progressBar.setVisibility(View.GONE);
+                                    
                                     String result = putData.getResult();
                                     if (result.equals("Servis Kaydi Basarili!")) {
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
