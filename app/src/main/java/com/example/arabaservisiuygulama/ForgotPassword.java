@@ -34,7 +34,7 @@ public class ForgotPassword extends AppCompatActivity {
             public void onClick(View v) {
                 progressBar.setVisibility(View.VISIBLE);
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                String url ="http://192.168.1.104/LoginRegister/deneme.php";
+                String url ="http://192.168.0.29/LoginRegister/deneme.php";
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
