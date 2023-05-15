@@ -18,8 +18,9 @@ import java.net.URL;
 
 public class Urunler extends AppCompatActivity {
 
-    private TextView urun1TextView, urun2TextView, urun3TextView, urun4TextView, urun5TextView, fiyat1Textview,
-            fiyat2Textview, fiyat3Textview, fiyat4Textview, fiyat5Textview;
+    private TextView urun1TextView, urun2TextView, urun3TextView, urun4TextView, urun5TextView,
+            fiyat1Textview, fiyat2Textview, fiyat3Textview, fiyat4Textview, fiyat5Textview;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
