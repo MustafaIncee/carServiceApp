@@ -13,10 +13,10 @@
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444"
+        app:layout_constraintVertical_bias="0.442"
         app:srcCompat="@drawable/telefon" />
 
     <ImageView
@@ -25,7 +25,7 @@
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.825"
@@ -129,10 +129,10 @@
         android:id="@+id/telefon1"
         android:layout_width="222dp"
         android:layout_height="34dp"
-        android:textSize="6sp"
-
         android:autoSizeTextType="uniform"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="6sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -183,9 +183,9 @@
         android:id="@+id/telefon2"
         android:layout_width="222dp"
         android:layout_height="34dp"
-        android:textSize="6sp"
         android:autoSizeTextType="uniform"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="6sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -213,14 +213,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142"
+        app:layout_constraintVertical_bias="0.158"
         app:srcCompat="@drawable/usta" />
 
     <TextView
         android:id="@+id/editTextText"
-        android:layout_width="388dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="357dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:inputType="text"
@@ -230,7 +230,6 @@
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -240,10 +239,10 @@
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655"
+        app:layout_constraintVertical_bias="0.654"
         app:srcCompat="@drawable/telefon" />
 
 

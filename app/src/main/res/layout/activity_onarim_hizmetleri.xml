@@ -7,86 +7,111 @@
     tools:context=".OnarimHizmetleri">
 
 
+    <Spinner
+        android:id="@+id/spinnerHizmet"
+        android:layout_width="378dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="13dp"
+        android:entries="@array/onarim_hizmeti"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHizmetAl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aracSecTextView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="423dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onarim"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-29dp" />
+
     <TextView
         android:id="@+id/aracSecTextView"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_width="385dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="11dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
         android:text="Aracınız için hemen talep oluşturun:"
         android:textColor="@color/yesil"
-        android:textSize="15dp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="548dp"
-        tools:targetApi="jelly_bean"
-        tools:ignore="MissingConstraints" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerHizmet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pFiyatText"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="jelly_bean" />
 
     <TextView
-        android:id="@+id/KayitOlText"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppinsmedium"
-        android:text="@string/OnarimHizmetleri"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Aracınızın onarıma ihtiyacı var mı?"
+        android:textColor="@color/yesil"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/KayitOlText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         tools:targetApi="jelly_bean" />
 
     <TextView
         android:id="@+id/pFiyatText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="17dp"
         android:fontFamily="@font/poppinsmedium"
         android:text="Ortalama Onarım Hizmeti Ücreti: 3000-7500 TL"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aracSecTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/KayitOlText"
         tools:ignore="MissingConstraints"
         tools:targetApi="jelly_bean" />
 
-
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="center"
-        android:text="Aracınızın onarıma ihtiyacı var mı?"
-        android:textColor="@color/yesil"
-        android:textSize="25dp"
+        android:id="@+id/KayitOlText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/OnarimHizmetleri"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pFiyatText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
         tools:targetApi="jelly_bean" />
 
-    <Spinner
-        android:entries="@array/onarim_hizmeti"
-        android:id="@+id/spinnerHizmet"
-        android:layout_width="409dp"
-        android:layout_height="48dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="590dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonHizmetAl"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/buttonb"
         android:text="Talep Oluştur"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="649dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="454dp"
-        android:layout_height="237dp"
-        app:srcCompat="@drawable/onarim"
-        tools:layout_editor_absoluteX="-22dp"
-        tools:layout_editor_absoluteY="16dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHizmet"
         tools:ignore="MissingConstraints" />
 
 

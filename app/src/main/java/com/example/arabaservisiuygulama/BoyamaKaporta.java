@@ -63,7 +63,7 @@ import java.util.Map;
                             data[0] = hizmet;
 
 
-                            PutData putData = new PutData("http://192.168.0.29/LoginRegister/hizmetler.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.104/LoginRegister/hizmetler.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     //progressBar.setVisibility(View.GONE);

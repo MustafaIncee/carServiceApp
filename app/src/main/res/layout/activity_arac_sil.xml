@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/aracx"
     tools:context=".AracSil">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_width="269dp"
+        android:layout_height="72dp"
         android:layout_marginTop="315dp"
         android:layout_marginBottom="68dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
         android:text="Araç Silme "
-        android:textColor="#FE2517"
-        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/aracPlakaSpinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,8 +25,8 @@
 
     <Spinner
         android:id="@+id/aracPlakaSpinner"
-        android:layout_width="248dp"
-        android:layout_height="85dp"
+        android:layout_width="302dp"
+        android:layout_height="77dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="83dp"
@@ -34,12 +35,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/aracSilButton"
         android:layout_width="126dp"
         android:layout_height="64dp"
         android:layout_marginBottom="261dp"
-        android:text="Button"
+        android:background="@drawable/buttonb"
+        android:text="Sil"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

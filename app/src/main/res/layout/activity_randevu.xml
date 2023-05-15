@@ -1,118 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    android:background="@drawable/main"
+    tools:context=".Randevu">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="394dp"
+        android:layout_height="672dp"
+        android:fillViewport="true"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Randevu">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Araba Bilgileri"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:padding="15dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Marka" />
+            <TextView
+                android:layout_width="289dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Araba Bilgileri"
+                android:textColor="#000000"
+                android:textSize="35sp"
+                android:textStyle="bold" />
 
-        <Spinner
-            android:id="@+id/marka"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:entries="@array/markalar"
-            android:inputType="text"
-            android:hint="Marka giriniz" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Marka" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Model" />
+            <Spinner
+                android:id="@+id/marka"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:entries="@array/markalar"
+                android:hint="Marka giriniz"
+                android:inputType="text" />
 
-        <Spinner
-            android:id="@+id/model"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:inputType="text"
-            android:hint="Model giriniz" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Model" />
 
-        <TextView
-            android:layout_width="18dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Yıl" />
+            <Spinner
+                android:id="@+id/model"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:entries="@array/modeller"
+                android:hint="Seri giriniz"
+                android:inputType="text" />
 
-        <Spinner
-            android:id="@+id/yil"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:entries="@array/yillar"
-            android:inputType="text"
-            android:hint="Yıl giriniz" />
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Yıl" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Plaka" />
+            <Spinner
+                android:id="@+id/yil"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:entries="@array/yillar"
+                android:hint="Yıl giriniz"
+                android:inputType="text" />
 
-        <EditText
-            android:id="@+id/plaka"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:inputType="text"
-            android:hint="Plaka giriniz" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Plaka" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Kilometre" />
+            <EditText
+                android:id="@+id/plaka"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:hint="Plaka giriniz"
+                android:inputType="text" />
 
-        <EditText
-            android:id="@+id/kilometre"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:inputType="text"
-            android:hint="Kilometre giriniz" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Kilometre" />
 
-        <TextView
-            android:id="@+id/yakit_turu_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Yakıt Türü"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            <EditText
+                android:id="@+id/kilometre"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:hint="Kilometre giriniz"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/yakit_turu_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yakıt Türü"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-        <Spinner
-            android:id="@+id/yakit"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:entries="@array/yakit_turleri"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/yakit_turu_label" />
+            <Spinner
+                android:id="@+id/yakit"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:entries="@array/yakit_turleri"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/yakit_turu_label" />
 
-        <Button
-            android:id="@+id/randevuOlustur"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="Devam" />
 
-    </LinearLayout>
-</ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/randevuOlustur"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:background="@drawable/buttonb"
+        android:text="Devam"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHighlight="@color/design_default_color_error"
+        android:textColorHint="#FE2517"
+        android:textColorLink="#FE2517"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,9 @@
 package com.example.arabaservisiuygulama;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -48,7 +43,7 @@ public class AracSil extends AppCompatActivity  {
         aracSilButton=findViewById(R.id.aracSilButton);
 
 
-        String url = "http://192.168.0.29/LoginRegister/listServiceType.php";
+        String url = "http://192.168.1.104/LoginRegister/listServiceType.php";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
                 url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -101,7 +96,7 @@ public class AracSil extends AppCompatActivity  {
                             data[0] = plakaSil;
 
 
-                            PutData putData = new PutData("http://192.168.0.29/LoginRegister/aracSil.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.104/LoginRegister/aracSil.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     //progressBar.setVisibility(View.GONE);
@@ -109,9 +104,7 @@ public class AracSil extends AppCompatActivity  {
                                     if (result.equals("Arac Silme islemi Basarili!"))
                                     {
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(AracSil.this, MainActivity.class);
-                                        startActivity(intent);
-                                        finish();
+
                                     }
                                     else {
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
