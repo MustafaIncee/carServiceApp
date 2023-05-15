@@ -20,7 +20,7 @@ public class Hizmetler extends AppCompatActivity {
         ButtonBoyamaKaporta = findViewById(R.id.buttonBoyamaveKaporta);
 
         ButtonPeriyodikBakim.setOnClickListener(new View.OnClickListener() {
-            @Overrideclea
+            @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Hizmetler.this, PeriyodikBakim.class);
                 startActivity(intent);
