@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <string name="app_name">arabaServisiUygulama</string>
     <string name="data">Result Text</string>
     <string name="fetch_data">Fetch Data</string>
@@ -86,9 +86,14 @@ Boya ve kaporta işleri, aracınızın dış görünüşünü yeniler ve hasarla
     </string-array>
 
     <string-array name="boyama_kaporta">
-        <item>Boyama ve Kaporta</item>
+        <item android:textColor="#ffffff">Boyama ve Kaporta</item>
     </string-array>
-
+    <string-array name="modeller">
+        <item>Benzin</item>
+        <item>Dizel</item>
+        <item>Elektrik</item>
+        <item>Hybrid</item>
+    </string-array>
 
     <string name="adres1">Esentepe Mah. İnönü Cad. Kartal Oto Sanayi Sitesi D:b8 Blok Kartal/İstanbul</string>
     <string name="adres2">Tatlıkuyu Mah. Akçasaray Cad. No:115/B Gebze/Kocaeli</string>
@@ -97,6 +102,6 @@ Boya ve kaporta işleri, aracınızın dış görünüşünü yeniler ve hasarla
     <string name="title_activity_randevu">Randevu</string>
     <string name="OnarimHizmetleri">Araba servisleri, araçların ihtiyaç duyduğu tamir işlemlerini gerçekleştirir. Bu hizmetler arasında motor, şanzıman, fren, süspansiyon ve elektronik sistemlerin onarımı yer alır. Profesyonel araba servisleri, araçlarınızı güvenle teslim edebileceğiniz, deneyimli ve uzman ekibiyle araçlarınızı en iyi şekilde onarır. Böylece, aracınızın ömrünü uzatır ve güvenliğinizi sağlar.</string>
 
-    <string name="app_name1">Yeni şifre belirlemek için e- mail adresinizi giriniz</string>
+    <string name="app_name1">Yeni şifre belirlemek için E-mail adresinizi giriniz</string>
     <string name="mail1">E-mail adresi </string>
 </resources>

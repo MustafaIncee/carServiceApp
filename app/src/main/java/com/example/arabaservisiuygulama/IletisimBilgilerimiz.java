@@ -46,7 +46,7 @@ public class IletisimBilgilerimiz extends AppCompatActivity {
 
             try {
                 // Verileri almak istediğiniz PHP dosyasının URL'sini belirtin
-                URL url = new URL("http://192.168.0.29/LoginRegister/Adres.php");
+                URL url = new URL("http://192.168.1.104/LoginRegister/Adres.php");
 
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");

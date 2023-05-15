@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/iletisim"
+    android:background="@drawable/asdddddd"
     tools:context=".Urunler">
-
 
 
     <TextView
@@ -15,7 +14,7 @@
         android:layout_height="80dp"
         android:autoSizeTextType="uniform"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
@@ -38,14 +37,13 @@
         app:layout_constraintVertical_bias="0.226" />
 
 
-
     <TextView
         android:id="@+id/urun2"
         android:layout_width="340dp"
         android:layout_height="80dp"
         android:autoSizeTextType="uniform"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.366"
@@ -73,7 +71,7 @@
         android:layout_height="80dp"
         android:autoSizeTextType="uniform"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -101,7 +99,7 @@
         android:layout_height="80dp"
         android:autoSizeTextType="uniform"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -129,13 +127,13 @@
         android:layout_height="80dp"
         android:autoSizeTextType="uniform"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.924" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <TextView
         android:id="@+id/fiyat5"
@@ -146,10 +144,10 @@
         android:textSize="6sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955" />
+        app:layout_constraintVertical_bias="0.943" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

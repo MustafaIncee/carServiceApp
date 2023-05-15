@@ -4,38 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/asdafffpng"
     tools:context=".Hizmetler">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonPeriyodikBakim"
-        android:layout_width="178dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="284dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/buttona"
         android:text="Periyodik Bakım"
-        app:layout_constraintStart_toStartOf="@+id/buttonOnarimHizmetleri"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOnarimHizmetleri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonOnarimHizmetleri"
-        android:layout_width="176dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/buttona"
         android:text="Onarım Hizmetleri"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBoyamaveKaporta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPeriyodikBakim" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonBoyamaveKaporta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/buttona"
         android:text="Boyama ve Kaporta"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonOnarimHizmetleri" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

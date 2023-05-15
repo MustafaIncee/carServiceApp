@@ -1,11 +1,11 @@
 package com.example.arabaservisiuygulama;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Hizmetler extends AppCompatActivity {
 
@@ -24,7 +24,7 @@ public class Hizmetler extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Hizmetler.this, PeriyodikBakim.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 

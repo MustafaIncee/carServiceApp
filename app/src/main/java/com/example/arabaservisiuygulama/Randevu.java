@@ -95,7 +95,7 @@ public class Randevu extends AppCompatActivity {
                             data[4] = kilometre;
                             data[5] = yakit;
 
-                            PutData putData = new PutData("http://192.168.0.29/LoginRegister/CarInformation.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.104/LoginRegister/CarInformation.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     //progressBar.setVisibility(View.GONE);
