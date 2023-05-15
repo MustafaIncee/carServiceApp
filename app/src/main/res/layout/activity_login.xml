@@ -4,31 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lg2zxc"
     tools:context=".Login">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
         android:text="@string/login"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp"
+        android:textColor="#FE2517"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
         tools:targetApi="jelly_bean" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:layout_width="398dp"
+        android:layout_height="268dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintVertical_bias="0.72"
+        tools:layout_editor_absoluteX="-7dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutKayit"
@@ -45,8 +48,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailLogin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_user"
+                android:layout_height="54dp"
+                android:drawableEnd="@drawable/ic_email"
                 android:fontFamily="@font/poppinsmedium"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -64,11 +67,11 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/LoginSifre"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:drawableEnd="@drawable/ic_password"
                 android:drawableRight="@drawable/ic_password"
-                android:inputType="textPassword"
                 android:fontFamily="@font/poppinsmedium"
+                android:inputType="textPassword"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,14 +84,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSifre" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/LoginButon"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_width="95dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/buttonb"
+            android:gravity="center"
             android:text="@string/login"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/progress" />
 
@@ -96,7 +102,7 @@
             android:id="@+id/KayitOlText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="32dp"
             android:fontFamily="@font/poppinsmedium"
             android:text="@string/signuphere"
             app:layout_constraintEnd_toEndOf="parent"
@@ -107,14 +113,15 @@
 
     <TextView
         android:id="@+id/button5"
-        android:layout_width="133dp"
-        android:layout_height="33dp"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
         android:text="Şifremi Unutum"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias="0.849" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

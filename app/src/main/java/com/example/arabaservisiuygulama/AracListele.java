@@ -35,7 +35,7 @@ public class AracListele extends AppCompatActivity {
         @Override
         protected Void doInBackground(Void... voids) {
             try {
-                URL url = new URL("http://192.168.0.29/LoginRegister/MyCars.php");
+                URL url = new URL("http://192.168.1.104/LoginRegister/MyCars.php");
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));

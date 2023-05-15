@@ -4,94 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cvvvv"
     tools:context=".PeriyodikBakim">
 
 
     <TextView
         android:id="@+id/aracSecTextView"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="200dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
         android:text="Aracınız için hemen talep oluşturun:"
-        android:textColor="@color/yesil"
-        android:textSize="15dp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="548dp"
-        tools:targetApi="jelly_bean"
-        tools:ignore="MissingConstraints" />
+        android:textColor="#3A0163"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="jelly_bean" />
+
 
     <TextView
         android:id="@+id/KayitOlText"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="376dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="58dp"
         android:fontFamily="@font/poppinsmedium"
         android:text="@string/PeriyodikBakim"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pFiyatText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints"
         tools:targetApi="jelly_bean" />
 
+
     <TextView
         android:id="@+id/pFiyatText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="80dp"
         android:fontFamily="@font/poppinsmedium"
         android:text="Ortalama Periyodik Bakım Ücreti: 2000-5000 TL"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerHizmet"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/KayitOlText"
         tools:ignore="MissingConstraints"
         tools:targetApi="jelly_bean" />
 
-
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="241dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="11dp"
+        android:layout_width="381dp"
+        android:layout_height="203dp"
+        android:layout_marginBottom="393dp"
+        app:layout_constraintBottom_toTopOf="@+id/aracSecTextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/periyodik" />
 
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
+        android:layout_width="362dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
-        android:text="Neden Periyodik Bakım Yaptırmalısınız"
-        android:textColor="@color/yesil"
+        android:text="Neden Periyodik Bakım Yaptırmalısınız ?"
+        android:textColor="#3A0163"
         android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/KayitOlText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:targetApi="jelly_bean" />
 
     <Spinner
-        android:entries="@array/periyodik_bakim"
         android:id="@+id/spinnerHizmet"
-        android:layout_width="409dp"
-        android:layout_height="48dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="590dp"
+        android:layout_width="366dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:entries="@array/periyodik_bakim"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHizmetAl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pFiyatText"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonHizmetAl"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="649dp"
+        android:layout_width="165dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/buttonb"
+        android:text="Talep Oluştur"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHizmet"
         tools:ignore="MissingConstraints" />
 
 

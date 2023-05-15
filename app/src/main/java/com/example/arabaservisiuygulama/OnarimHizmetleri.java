@@ -1,7 +1,5 @@
 package com.example.arabaservisiuygulama;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +10,9 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.vishnusivadas.advanced_httpurlconnection.PutData;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-import java.util.Map;
+import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class OnarimHizmetleri extends AppCompatActivity {
 
@@ -63,7 +60,7 @@ public class OnarimHizmetleri extends AppCompatActivity {
                             data[0] = hizmet;
 
 
-                            PutData putData = new PutData("http://192.168.0.29/LoginRegister/hizmetler.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.104/LoginRegister/hizmetler.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     //progressBar.setVisibility(View.GONE);

@@ -9,8 +9,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="390dp"
-        android:layout_height="600dp"
+        android:layout_width="423dp"
+        android:layout_height="602dp"
         android:layout_marginTop="100dp"
         android:fillViewport="true"
         android:padding="16dp"

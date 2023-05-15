@@ -4,90 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/adminxcv"
     tools:context=".BoyamaKaporta">
 
 
     <TextView
         android:id="@+id/aracSecTextView"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="14dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
         android:text="Aracınız için hemen talep oluşturun:"
         android:textColor="@color/yesil"
-        android:textSize="15dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="556dp"
-        tools:targetApi="jelly_bean" />
-
-    <TextView
-        android:id="@+id/KayitOlText"
-        android:layout_width="410dp"
-        android:layout_height="166dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppinsmedium"
-        android:text="@string/BoyamaKaporta"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerHizmet"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/pFiyatText"
         tools:ignore="MissingConstraints"
         tools:targetApi="jelly_bean" />
 
+    <Spinner
+        android:id="@+id/spinnerHizmet"
+        android:layout_width="381dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#000000"
+        android:entries="@array/boyama_kaporta"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHizmetAl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aracSecTextView"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonHizmetAl"
+        android:layout_width="164dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/buttonb"
+        android:text="Talep Oluştur"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHizmet"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/pFiyatText"
-        android:layout_width="356dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="370dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/poppinsmedium"
         android:text="Ortalama Boyama ve Kaporta Hizmeti Ücreti: 5000-15000 TL"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/aracSecTextView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/KayitOlText"
         tools:ignore="MissingConstraints"
         tools:targetApi="jelly_bean" />
 
     <TextView
+        android:id="@+id/KayitOlText"
+        android:layout_width="376dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="67dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/BoyamaKaporta"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/pFiyatText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
+        android:layout_width="375dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="37dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
         android:text="Aracınızın görünümüne yeniden hayat verin!"
         android:textColor="@color/yesil"
         android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/KayitOlText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:targetApi="jelly_bean" />
 
-    <Spinner
-        android:entries="@array/boyama_kaporta"
-        android:id="@+id/spinnerHizmet"
-        android:layout_width="409dp"
-        android:layout_height="48dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="590dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/buttonHizmetAl"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:text="Talep Oluştur"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="649dp"
-        tools:ignore="MissingConstraints" />
-
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="436dp"
-        android:layout_height="348dp"
+        android:layout_width="378dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/boyamavekaporta"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="55dp"
         tools:ignore="MissingConstraints" />
 
 

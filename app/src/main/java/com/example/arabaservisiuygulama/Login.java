@@ -1,7 +1,5 @@
 package com.example.arabaservisiuygulama;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,6 +9,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SignUp.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -70,7 +70,7 @@ public class Login extends AppCompatActivity {
                             data[0] = email;
                             data[1] = sifre;
 
-                            PutData putData = new PutData("http://192.168.0.29/LoginRegister/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.104/LoginRegister/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);

@@ -4,35 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/admind1"
     tools:context=".Admin">
 
-    <Button
-        android:id="@+id/listeleButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="333dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginBottom="137dp"
-        android:text="Listele"
-        app:layout_constraintBottom_toTopOf="@+id/silButton"
-        app:layout_constraintEnd_toStartOf="@+id/silButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="InvalidId" />
 
-    <Button
-        android:id="@+id/silButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="326dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="247dp"
-        android:text="Sil"
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/homeb"
+        android:layout_width="74dp"
+        android:layout_height="67dp"
+        android:background="@drawable/baseline_home_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listeleButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/listeleButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="359dp"
+        android:layout_height="94dp"
+        android:background="@drawable/buttonaa"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Listele"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
         tools:ignore="InvalidId" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/silButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="364dp"
+        android:layout_height="103dp"
+        android:background="@drawable/buttonbb"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Sil"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="349dp"
+        android:layout_height="194dp"
+        android:gravity="center"
+        android:text="Admin Paneline Hoşgeldiniz"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
