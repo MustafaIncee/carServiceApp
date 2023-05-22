@@ -43,7 +43,7 @@ public class AracSil extends AppCompatActivity  {
         aracSilButton=findViewById(R.id.aracSilButton);
 
 
-        String url = "http://192.168.1.104/LoginRegister/listServiceType.php";
+        String url = "http://192.168.0.29/LoginRegister/listServiceType.php";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
                 url, null, new Response.Listener<JSONObject>() {
             @Override

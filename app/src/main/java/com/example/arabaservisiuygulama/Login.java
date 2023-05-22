@@ -59,18 +59,18 @@ public class Login extends AppCompatActivity {
                         public void run() {
 
 
-                            //Starting Write and Read data with URL
-                            //Creating array for parameters
+                            //URL ile Yazma ve Okuma verilerini başlatma
+                            //Parametreler için dizi oluşturuldu
                             String[] field = new String[2];
                             field[0] = "email";
                             field[1] = "sifre";
 
-                            //Creating array for data
+                            //Veriler için dizi oluşturuldu
                             String[] data = new String[2];
                             data[0] = email;
                             data[1] = sifre;
 
-                            PutData putData = new PutData("http://192.168.1.104/LoginRegister/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.0.29/LoginRegister/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
